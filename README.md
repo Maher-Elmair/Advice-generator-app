@@ -3,6 +3,8 @@
 A simple and interactive advice generator app built using **HTML**,**Css**,**Sass**, and **JavaScript**.  
 This project is a solution to the [Frontend Mentor Advice Generator App challenge](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) — designed to improve front-end skills by working with APIs and building responsive UI components.
 
+> 📅 **Note:** This is an old project built on **‎Sunday, ‎February 5, 2023** as part of my early front-end learning journey.
+
 ---
 
 ## 📸 Screenshots
