@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+/**
+*
+* Testing
+*
+**/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: #cee3e9;
+  border-left: 0 solid #ffffff;
+  border-right: 0 solid #ffffff;
+  margin-block: 3px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #37bf7b;
+  width: 15% !important;
+  height: 15% !important;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar:hover {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  /* code for firefox */
+  color: #ffffff;
+  background-color: #37bf7b;
+}
+
+::selection {
+  /* code for firefox */
+  color: #ffffff;
+  background-color: #37bf7b;
+}
+
+/* end variables */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /*small*/
+  /* tablet */
+  /* Medium */
+  /* desktop  */
+}
+@media (min-width: 577px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*! start variables*/
+/*! end variables*/
+/*! start Global Rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.15;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background: #1f2632;
+  padding-top: 120px;
+  position: relative;
+  height: 100vh;
+}
+
+/*! end Global Rules*/
+/*! start code */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 580px;
+  width: clamp(295px, 90%, 34rem);
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  padding: 60px;
+  margin: 120px auto;
+  background-color: #323a49;
+  position: relative;
+}
+.app h6 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 18px;
+  color: #52ffa8;
+  margin-bottom: 20px;
+}
+.app .content-quote {
+  width: 80%;
+}
+.app .content-quote .quote {
+  color: #cee3e9;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.app .content-quote .quote::after {
+  content: url(../images/pattern-divider-desktop.svg);
+  overflow: hidden;
+}
+@media (max-width: 580px) {
+  .app .content-quote .quote::after {
+    content: url(../images/pattern-divider-mobile.svg);
+  }
+}
+.app .button {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #52ffa8;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30px;
+  box-shadow: 0rem 0rem 1rem #48556a;
+}
+.app .button:hover {
+  box-shadow: 0rem 0rem 1rem #52ffa8;
+  cursor: pointer;
+}
+.app .button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px #52ffa8;
+}
+.app .button img {
+  transition: 1.3s;
+}
+.app .button img:hover {
+  transition: 1.3s;
+  transform: rotateZ(360deg);
+}
+
+/*! start Attribution */
+.attribution {
+  position: absolute;
+  bottom: 4%;
+  color: #cee3e9;
+}
+.attribution a {
+  font-size: smaller;
+  text-decoration: none;
+  color: #52ffa8;
+  text-transform: capitalize;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.attribution a:hover::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  content: "\f0a9";
+  font-size: 14px;
+  padding: 0 8px;
+}
+@media (max-width: 380px) {
+  .attribution {
+    white-space: break-spaces;
+    line-height: 2;
+    left: 0;
+  }
+}
+
+/*! end Attribution */
+/*! end code *//*# sourceMappingURL=style.css.map */
